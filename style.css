@@ -1,0 +1,255 @@
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;900&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  html,
+  body {
+      width: 100%;
+      height: 100%;
+
+  }
+
+  .main {
+      position: relative;
+      overflow: hidden;
+  }
+
+  .page1 {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(https://fontawesome.com/images/icons-gray-bg.svg);
+
+  }
+
+  .contaner1 {
+      height: 80%;
+      width: 35%;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 20px;
+      flex-wrap: wrap;
+  }
+
+
+
+  form {
+      /* border: 1px solid red; */
+      text-align: center;
+      margin-top: 2rem;
+  }
+
+  form h3 {
+      font-family: 'Barlow', sans-serif;
+      letter-spacing: 2px;
+      font-weight: 900;
+      font-size: 1.4rem;
+
+  }
+
+  form h2 {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 600;
+
+  }
+
+  #fcon {
+      font-size: 5rem;
+      margin-top: 0;
+
+  }
+
+  form p {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 400;
+      margin-top: 1rem;
+  }
+
+  .frm {
+      margin-top: 1.4rem;
+
+  }
+
+  .frm input {
+      font-size: 1rem;
+      margin-top: 1rem;
+      border: none;
+      border-bottom: 1px solid black;
+      outline: none;
+  }
+  .invalid input{
+    margin-top: 0;
+    border:  1px solid rgb(255, 1, 1);
+    height: 2rem;
+    border-radius: 14px;
+  }
+
+  .frm i {
+      font-size: 1rem;
+  }
+
+  ::placeholder {
+      padding-left: .4rem;
+      font-size: .8rem;
+      font-family: 'Barlow', sans-serif;
+  }
+
+  .repassword {
+      /* border: 1px solid red; */
+      display: flex;
+      text-align: left;
+      padding: 0 1.1rem;
+      gap: 10px;
+  }
+
+  .repassword p {
+      /* border: 1px solid red; */
+      text-align: left;
+      width: 80%;
+  }
+
+  .repassword input {
+
+      margin-left: 1rem;
+      gap: 10px;
+      margin-top: 1rem;
+  }
+
+  span {
+      display: flex;
+      margin-left: -2rem;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: left;
+      gap: 10px;
+      color: red;
+      font-size: 13px;
+      display: none;
+  }
+
+  .invalid span {
+      display: flex;
+  }
+
+  .error-email > i{
+    font-size: 18px;
+  }
+  span>i {
+    
+      margin-top: 1rem;
+      margin-left: 1rem;
+
+  }
+
+  .fpass p {
+
+      margin-left: 7rem;
+      text-decoration: none;
+      border-bottom: 1px dashed;
+  }
+
+  /* .fpass {
+     width: 80%;
+  } */
+
+  button {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      width: 60%;
+      height: 3rem;
+      border-radius: 8px;
+      border: 1px solid #183153;
+      border-bottom: 4px solid #183153;
+      background-color: rgb(232, 232, 31);
+      cursor: pointer;
+
+  }
+
+  button:hover {
+      background-color: #FAB00f;
+  }
+
+  .sign-dtl {
+      margin-top: 3rem;
+      font-family: 'Barlow', sans-serif;
+  }
+
+  .sign-dtl a {
+      text-decoration: none;
+      border-bottom: 1px dashed;
+  }
+
+
+
+
+  @media (max-width:720px) {
+
+      .contaner1 {
+          width: 55%;
+          height: 72%;
+      }
+
+      form h3 {
+          font-size: 1rem;
+      }
+
+      #fcon {
+          font-size: 3rem;
+      }
+
+      form h2 {
+          font-size: 1.3rem;
+
+      }
+
+      form p {
+          font-size: .8rem;
+      }
+
+      .repassword {
+          padding: 0 1rem;
+          gap: 4px;
+      }
+  }
+
+  @media (max-width:360px) {
+
+      .contaner1 {
+          width: 90%;
+          height: 72%;
+      }
+
+      form h3 {
+          font-size: 1rem;
+      }
+
+      #fcon {
+          font-size: 3rem;
+      }
+
+      form h2 {
+          font-size: 1.3rem;
+
+      }
+
+      form p {
+          font-size: .8rem;
+      }
+
+      .repassword {
+          gap: 2px;
+      }
+
+      .repassword p {
+
+          font-size: .5rem;
+      }
+
+  }

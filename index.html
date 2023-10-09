@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ideogram.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form validation</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="page1">
+            <div class="contaner1">
+                <form action="">
+                    <h3>WELCOME BACK</h3>
+                    <P id="fcon">☺️</P>
+                    <h2>Sign in to Your Account</h2>
+                    <p>Let's get you signed in and straight to the icons.</p>
+
+                    <!-- Name -->
+                    <div class="frm">
+
+                        <i class="uil uil-user"></i>
+                        <input type="text" placeholder="Name" >
+
+                    </div>
+
+                    <!--email -->
+                    <div class="frm" id="email">
+                        <i class="uil uil-envelope-minus"></i>
+                        <input type="text" placeholder="Email"  class="in-email"> <br>
+                        <!-- <span class="error-email">
+                            <i class="uil uil-exclamation-octagon"></i>
+                            <p>Please Enter a valid Email</p>
+                        </span> -->
+                    </div>
+                    <!-- password -->
+
+                    <div class="frm" id="password">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password"  class="password"><br>
+                        <!-- <span class="error-password">
+                            <i class="uil uil-exclamation-octagon"></i>
+                            <p>Please enter atlest 8 char</p>
+                        </span> -->
+                    </div>
+                    <!-- cfpassword -->
+                    <div class="frm" id="cfpassword">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Conform Password"  class="cfpass"><br>
+                        <!-- <span class="error-cfpassword">
+                            <i class="uil uil-exclamation-octagon"></i>
+                            <p>Password don't match</p>
+                        </span> -->
+                    </div>
+                    <!-- . -->
+                    <div class="repassword">
+                        <input type="checkbox">
+                        <p>Remember me</p>
+                        <p class="fpass"><a href="#">forgot your password?</a></p>
+                    </div>
+                    <button>submit <i class="uil uil-signout"></i></button>
+
+                    <p class="sign-dtl">Don't have an account? <a href="#">Sign up and get started!</a></p>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
